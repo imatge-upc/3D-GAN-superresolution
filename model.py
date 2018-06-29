@@ -480,7 +480,7 @@ if __name__ == '__main__':
     parser.add_argument('-checkpoint_dir_restore', help='Path to restore checkpoints')
     parser.add_argument('-residual_blocks', default=6, help='Number of residual blocks')
     parser.add_argument('-upsampling_factor', default=4, help='Upsampling factor')
-    parser.add_argument('-evaluate', default=False, help='Number of residual blocks')
+    parser.add_argument('-evaluate', default=False, help='Test the model')
     parser.add_argument('-subpixel_NN', default=False, help='Use subpixel nearest neighbour')
     parser.add_argument('-nn', default=False, help='Use Upsampling3D + nearest neighbour, RC')
     parser.add_argument('-feature_size', default=32, help='Number of filters')
