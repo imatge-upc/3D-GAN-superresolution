@@ -51,3 +51,6 @@ To test the network the model.py script is also used. When calling the script yo
 ```
 python model.py -path_volumes YOURPATH -checkpoint_dir_restore YOURCHECKPOINTPATH -residual_blocks 8 -upsampling_factor 2 -subpixel_NN True -feature_size 64 -evaluate True
 ```
+
+# Contact
+If you have any general doubt about our work or code which may be of interest for other researchers, please use the public issues section on this github repo.
