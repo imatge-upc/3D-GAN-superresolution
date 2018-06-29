@@ -20,13 +20,13 @@ The code expects that the database is inside the folder specified by the data_pa
 
 ### Training
 To train the network the model.py script is used. When calling the script you should specify:
-⋅⋅* -path_prediction: Path to save training predictions.
-⋅⋅* -checkpoint_dir: Path to save checkpoints.
-⋅⋅* -residual_blocks: Number of residual blocks.
-⋅⋅* -upsampling_factor: Upsampling factor.
-⋅⋅* -subpixel_NN: Use subpixel nearest neighbour.
-⋅⋅* -nn: Use Upsampling3D + nearest neighbour, RC.
-⋅⋅* -feature_size: Number of filters.
++ -path_prediction: Path to save training predictions.
++ -checkpoint_dir: Path to save checkpoints.
++ -residual_blocks: Number of residual blocks.
++ -upsampling_factor: Upsampling factor.
++ -subpixel_NN: Use subpixel nearest neighbour.
++ -nn: Use Upsampling3D + nearest neighbour, RC.
++ -feature_size: Number of filters.
 
 By default it will use the sub-pixel convolution layers, 32 filters, 6 residual blocks and an umpsaling factor of 4.
 
@@ -39,14 +39,14 @@ python model.py -path_prediction YOURPATH -checkpoint_dir YOURCHECKPOINTPATH -re
 
 ### Testing
 To test the network the model.py script is also used. When calling the script you should specify the same arguments as before for the configuration of the model and the new paths used. Also, the argument evaluate should be True:
-⋅⋅* -path_volumes: Path to save test volumes.
-⋅⋅* -checkpoint_dir_restore: Path to restore checkpoints.
-⋅⋅* -residual_blocks: Number of residual blocks.
-⋅⋅* -upsampling_factor: Upsampling factor.
-⋅⋅* -subpixel_NN: Use subpixel nearest neighbour.
-⋅⋅* -nn: Use Upsampling3D + nearest neighbour, RC.
-⋅⋅* -feature_size: Number of filters.
-⋅⋅* -evaluate: Test the model.
++ -path_volumes: Path to save test volumes.
++ -checkpoint_dir_restore: Path to restore checkpoints.
++ -residual_blocks: Number of residual blocks.
++ -upsampling_factor: Upsampling factor.
++ -subpixel_NN: Use subpixel nearest neighbour.
++ -nn: Use Upsampling3D + nearest neighbour, RC.
++ -feature_size: Number of filters.
++ -evaluate: Test the model.
 
 ```
 python model.py -path_volumes YOURPATH -checkpoint_dir_restore YOURCHECKPOINTPATH -residual_blocks 8 -upsampling_factor 2 -subpixel_NN True -feature_size 64 -evaluate True
